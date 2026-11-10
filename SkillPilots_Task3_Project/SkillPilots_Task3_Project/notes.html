@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillPilots - Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="notes-wrap">
+    <header class="notes-header">
+      <div><h1>My Notes</h1><p class="muted">Welcome, <strong id="user-name"></strong></p></div>
+      <button id="logout-btn" class="secondary" type="button">Logout</button>
+    </header>
+    <section class="notes-card">
+      <h2>Student Notes</h2>
+      <p>This is a protected notes page. Only users with a login token can view it.</p>
+      <textarea id="note" rows="7" placeholder="Write your notes here..."></textarea>
+      <button id="save-btn" type="button">Save note</button>
+      <p id="save-message" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="notes.js"></script>
+</body>
+</html>
